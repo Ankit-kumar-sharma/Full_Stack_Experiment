@@ -6,13 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Div Tag Introduction</title>
     <link rel="stylesheet" href="../StyleSheet/mystyle.css" />
+    <script>
+        function myFunction()
+      {
+      if(document.getElementById('content').innerHTML==="Read More")
+      {
+        document.getElementById("para-container").style.height="auto";
+        document.getElementById("box1").style.height="auto";
+        document.getElementById("content").innerHTML="Read Less";        
+      }
+      else
+      {
+        document.getElementById("para-container").style.height="200px";
+        document.getElementById("box1").style.height="500px";
+        document.getElementById("content").innerHTML="Read More";  
+      }
+    }
+    function myFunction2()
+      {
+      if(document.getElementById('content2').innerHTML==="Read More")
+      {
+        document.getElementById("para-container2").style.height="auto";
+        document.getElementById("box2").style.height="auto";
+        document.getElementById("content2").innerHTML="Read Less";        
+      }
+      else
+      {
+        document.getElementById("para-container2").style.height="200px";
+        document.getElementById("box2").style.height="500px";
+        document.getElementById("content2").innerHTML="Read More";  
+      }
+    }
+    function myFunction3()
+      {
+      if(document.getElementById('content3').innerHTML==="Read More")
+      {
+        document.getElementById("para-container3").style.height="auto";
+        document.getElementById("box3").style.height="auto";
+        document.getElementById("content3").innerHTML="Read Less";        
+      }
+      else
+      {
+        document.getElementById("para-container3").style.height="200px";
+        document.getElementById("box3").style.height="500px";
+        document.getElementById("content3").innerHTML="Read More";  
+      }
+    }
+    function myFunction4()
+      {
+      if(document.getElementById('content4').innerHTML==="Read More")
+      {
+        document.getElementById("para-container4").style.height="auto";
+        document.getElementById("box4").style.height="auto";
+        document.getElementById("content4").innerHTML="Read Less";        
+      }
+      else
+      {
+        document.getElementById("para-container4").style.height="200px";
+        document.getElementById("box4").style.height="500px";
+        document.getElementById("content4").innerHTML="Read More";  
+      }
+    } 
+    </script>
   </head>
   <body>
     <div id="container">
       <div id="sub-container">
-        <div class="box1">
+        <div class="box1" id="box1">
           <div class="image-container">
-              <p style="font-size: 30px; color: white; text-align: center;">HTML</p>
+            <p style="font-size: 30px; color: white; text-align: center">
+              HTML
+            </p>
           </div>
           <div class="heading-container">
             <p
@@ -26,23 +90,39 @@
               Introduction to HTML
             </p>
           </div>
-          <div class="para-container">
-            <p>
-              <span style="color: purple; font-size: larger;">L</span>ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-              tempora error rem sapiente natus iure magnam consectetur eaque
-              sequi, modi dicta ex, autem culpa saepe illo perferendis molestiae
-              vero necessitatibus rerum numquam, aperiam quam! Neque consequatur
-              similique vero reiciendis labore eaque eos velit itaque, magnam
-              delectus fuga harum iusto. A!
+          <div class="para-container" id="para-container">
+              <span style="color: purple; font-size: larger">L</span>ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis tempora error rem
+              sapiente natus iure magnam consectetur eaque sequi, modi dicta ex,
+              autem culpa saepe illo perferendis molestiae vero necessitatibus
+              rerum numquam, aperiam quam! Neque consequatur similique vero
+              reiciendis labore eaque eos velit itaque, magnam delectus fuga
+              harum iusto. A! 
+              <br/>
+              <br/> 
+              <br/>
+              ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptates atque aut provident deleniti, qui fuga accusamus
+              expedita nam, asperiores sunt possimus voluptate! Sequi numquam
+              reprehenderit aliquam asperiores pariatur repellendus consectetur
+              cum, quaerat nihil accusamus sapiente molestiae consequatur fugiat
+              repellat enim laudantium corrupti et. Exercitationem porro placeat
+              nesciunt asperiores, molestias eaque sed maxime inventore unde cum
+              molestiae repellat tempore eum labore nemo id eius minus illum
+              beatae tempora! Itaque recusandae eligendi in quo velit, ullam
+              pariatur odio facilis rerum corporis ratione adipisci ab, amet
+              harum veritatis quisquam expedita nemo laborum architecto
+              deserunt. Animi aperiam ipsam iusto, amet deleniti cumque
+              recusandae omnis?
             </p>
           </div>
           <div class="readMore">
-            <a href="#">Read More</a>
+            <a onclick="myFunction()" id="content">Read More</a>
           </div>
         </div>
-        <div class="box2">
+        <div class="box2" id="box2">
           <div class="image-container">
-            <p style="font-size: 30px; color: white; text-align: center;">CSS</p>
+            <p style="font-size: 30px; color: white; text-align: center">CSS</p>
           </div>
           <div class="heading-container">
             <p
@@ -56,23 +136,42 @@
               Introduction to CSS
             </p>
           </div>
-          <div class="para-container">
+          <div class="para-container" id="para-container2">
             <p>
-                <span style="color: purple; font-size: larger;">L</span>ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                tempora error rem sapiente natus iure magnam consectetur eaque
-                sequi, modi dicta ex, autem culpa saepe illo perferendis molestiae
-                vero necessitatibus rerum numquam, aperiam quam! Neque consequatur
-                similique vero reiciendis labore eaque eos velit itaque, magnam
-                delectus fuga harum iusto. A!
-              </p>
+              <span style="color: purple; font-size: larger">L</span>ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis tempora error rem
+              sapiente natus iure magnam consectetur eaque sequi, modi dicta ex,
+              autem culpa saepe illo perferendis molestiae vero necessitatibus
+              rerum numquam, aperiam quam! Neque consequatur similique vero
+              reiciendis labore eaque eos velit itaque, magnam delectus fuga
+              harum iusto. A! 
+              <br/>
+              <br/> 
+              <br/>
+              ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptates atque aut provident deleniti, qui fuga accusamus
+              expedita nam, asperiores sunt possimus voluptate! Sequi numquam
+              reprehenderit aliquam asperiores pariatur repellendus consectetur
+              cum, quaerat nihil accusamus sapiente molestiae consequatur fugiat
+              repellat enim laudantium corrupti et. Exercitationem porro placeat
+              nesciunt asperiores, molestias eaque sed maxime inventore unde cum
+              molestiae repellat tempore eum labore nemo id eius minus illum
+              beatae tempora! Itaque recusandae eligendi in quo velit, ullam
+              pariatur odio facilis rerum corporis ratione adipisci ab, amet
+              harum veritatis quisquam expedita nemo laborum architecto
+              deserunt. Animi aperiam ipsam iusto, amet deleniti cumque
+              recusandae omnis?
+            </p>
           </div>
           <div class="readMore">
-            <a href="#">Read More</a>
+            <a href="#" onclick="myFunction2()" id="content2">Read More</a>
           </div>
         </div>
-        <div class="box3">
+        <div class="box3" id="box3">
           <div class="image-container">
-            <p style="font-size: 30px; color: white; text-align: center;">JavaScript</p>
+            <p style="font-size: 30px; color: white; text-align: center">
+              JavaScript
+            </p>
           </div>
           <div class="heading-container">
             <p
@@ -86,23 +185,42 @@
               Introduction to JavaScript
             </p>
           </div>
-          <div class="para-container">
+          <div class="para-container" id="para-container3">
             <p>
-                <span style="color: purple; font-size: larger;">L</span>ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                tempora error rem sapiente natus iure magnam consectetur eaque
-                sequi, modi dicta ex, autem culpa saepe illo perferendis molestiae
-                vero necessitatibus rerum numquam, aperiam quam! Neque consequatur
-                similique vero reiciendis labore eaque eos velit itaque, magnam
-                delectus fuga harum iusto. A!
-              </p>
+              <span style="color: purple; font-size: larger">L</span>ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis tempora error rem
+              sapiente natus iure magnam consectetur eaque sequi, modi dicta ex,
+              autem culpa saepe illo perferendis molestiae vero necessitatibus
+              rerum numquam, aperiam quam! Neque consequatur similique vero
+              reiciendis labore eaque eos velit itaque, magnam delectus fuga
+              harum iusto. A! 
+              <br/>
+              <br/> 
+              <br/>
+              ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptates atque aut provident deleniti, qui fuga accusamus
+              expedita nam, asperiores sunt possimus voluptate! Sequi numquam
+              reprehenderit aliquam asperiores pariatur repellendus consectetur
+              cum, quaerat nihil accusamus sapiente molestiae consequatur fugiat
+              repellat enim laudantium corrupti et. Exercitationem porro placeat
+              nesciunt asperiores, molestias eaque sed maxime inventore unde cum
+              molestiae repellat tempore eum labore nemo id eius minus illum
+              beatae tempora! Itaque recusandae eligendi in quo velit, ullam
+              pariatur odio facilis rerum corporis ratione adipisci ab, amet
+              harum veritatis quisquam expedita nemo laborum architecto
+              deserunt. Animi aperiam ipsam iusto, amet deleniti cumque
+              recusandae omnis?
+            </p>
           </div>
           <div class="readMore">
-            <a href="#">Read More</a>
+            <a href="#" onclick="myFunction3()" id="content3">Read More</a>
           </div>
         </div>
-        <div class="box4">
+        <div class="box4" id="box4">
           <div class="image-container">
-            <p style="font-size: 30px; color: white; text-align: center;">React</p>
+            <p style="font-size: 30px; color: white; text-align: center">
+              React
+            </p>
           </div>
           <div class="heading-container">
             <p
@@ -116,18 +234,35 @@
               Introduction to React
             </p>
           </div>
-          <div class="para-container">
+          <div class="para-container" id="para-container4">
             <p>
-                <span style="color: purple; font-size: larger;">L</span>ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-                tempora error rem sapiente natus iure magnam consectetur eaque
-                sequi, modi dicta ex, autem culpa saepe illo perferendis molestiae
-                vero necessitatibus rerum numquam, aperiam quam! Neque consequatur
-                similique vero reiciendis labore eaque eos velit itaque, magnam
-                delectus fuga harum iusto. A!
-              </p>
+              <span style="color: purple; font-size: larger">L</span>ipsum dolor
+              sit, amet consectetur adipisicing elit. Debitis tempora error rem
+              sapiente natus iure magnam consectetur eaque sequi, modi dicta ex,
+              autem culpa saepe illo perferendis molestiae vero necessitatibus
+              rerum numquam, aperiam quam! Neque consequatur similique vero
+              reiciendis labore eaque eos velit itaque, magnam delectus fuga
+              harum iusto. A! 
+              <br/>
+              <br/> 
+              <br/>
+              ipsum dolor sit amet consectetur adipisicing
+              elit. Voluptates atque aut provident deleniti, qui fuga accusamus
+              expedita nam, asperiores sunt possimus voluptate! Sequi numquam
+              reprehenderit aliquam asperiores pariatur repellendus consectetur
+              cum, quaerat nihil accusamus sapiente molestiae consequatur fugiat
+              repellat enim laudantium corrupti et. Exercitationem porro placeat
+              nesciunt asperiores, molestias eaque sed maxime inventore unde cum
+              molestiae repellat tempore eum labore nemo id eius minus illum
+              beatae tempora! Itaque recusandae eligendi in quo velit, ullam
+              pariatur odio facilis rerum corporis ratione adipisci ab, amet
+              harum veritatis quisquam expedita nemo laborum architecto
+              deserunt. Animi aperiam ipsam iusto, amet deleniti cumque
+              recusandae omnis?
+            </p>
           </div>
           <div class="readMore">
-            <a href="#">Read More</a>
+            <a href="#" onclick="myFunction4()" id="content4">Read More</a>
           </div>
         </div>
       </div>
