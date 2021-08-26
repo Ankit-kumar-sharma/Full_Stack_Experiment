@@ -1,0 +1,112 @@
+ *
+ {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+ body
+ {
+     background-image: url(../Images/lapback2.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100vh;
+     width: 100%;
+ }
+ .menu
+ {
+     background-color: black;
+     text-align: center;
+ }
+ .menu ul
+ {
+     display: inline-flex;
+     
+ }
+ .menu ul li
+ {
+    width: 220px;
+    height: auto;    
+    list-style: none;
+     
+  
+ }
+ .menu ul li a
+ {
+     padding: 10px 30px;
+     margin: 20px;
+     margin-top: 25px;
+     margin-bottom: 25px;
+     display: block;
+     text-decoration: none;
+     text-transform: capitalize;
+     color: white;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+    border-radius: 0px;
+ }
+ .menu ul li a:hover, #active
+ {
+     background-color: white;
+     color: black;
+ }
+ 
+ .fa-caret-right
+ {
+     margin-left: 5px;
+ }
+ .fa
+ {
+     margin-right: 5px;
+ }
+ .courseInfo
+ {
+     display: none;
+ }
+ .menu ul li:hover .courseInfo
+ {
+     display: block;
+     position: absolute;
+     background-color: black;
+ }
+ .menu ul li ul
+ {
+     display: block;
+ }
+ .menu ul li ul li a
+ {
+     margin-right: 10px;
+    border-bottom: 0px solid white;
+    border-radius: 0px;
+ }
+ .fa-caret-right
+ {
+     color: white;
+ }
+ .fa-caret-right:hover
+ {
+     color: #bfbfbf;
+ }
+ 
+ .menu ul li ul
+ {
+     padding: 0px;
+ }
+ .menu ul li ul li a:hover
+ {
+     background-color: transparent;
+     color: #bfbfbf;
+     border-radius: 0px;
+ }
+ .sub-drop
+ {
+     display: none;
+ }
+ .menu ul li ul li:hover .sub-drop
+ {
+     display: block;
+     position: absolute;
+     background-color: black;
+     margin-left:220px;
+     margin-top: -60px;
+ }
