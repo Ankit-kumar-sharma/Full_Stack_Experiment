@@ -30,6 +30,9 @@
 }
 .heading-container
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:auto;
     margin-top: 10px;
     width: 90%;
@@ -72,3 +75,9 @@
     background-color: purple;
 }
 
+.heading
+{
+    color: purple;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
