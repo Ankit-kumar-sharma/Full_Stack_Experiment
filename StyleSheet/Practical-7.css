@@ -6,7 +6,8 @@
  }
  body
  {
-     background-image: url(../Images/lapback2.jpg);
+     /* background-image:url(https://picsum.photos/1350/650); */
+     background-image: url(../Images/LaptopBackground3.jpg);
      background-position: center;
      background-size: cover;
      background-repeat: no-repeat;
@@ -45,12 +46,21 @@
      font-family: 'Times New Roman', Times, serif;
     border-radius: 0px;
  }
- .menu ul li a:hover, #active
+ .menu ul li a:hover
  {
-     background-color: whitesmoke;
+     background-color: rgba(255, 255, 255, 0.6);
      color: black;
  }
- 
+ #active
+ {
+     color: black;
+     background-color: rgba(255, 255, 255, 1);
+ }
+ .fa-caret-down
+ {
+     color: rgba(0, 0, 0, 0);
+ }
+
  .fa-caret-right
  {
      margin-left: 5px;
@@ -69,6 +79,10 @@
      position: absolute;
      background-color: rgba(0, 0, 0, 0.4);;
  }
+ .menu ul li:hover .fa-caret-down
+ {
+     color: black;
+ }
  .menu ul li ul
  {
      display: block;
@@ -82,10 +96,6 @@
  {
      color: white;
  }
- .fa-caret-right:hover
- {
-     color: #bfbfbf;
- }
  
  .menu ul li ul
  {
@@ -97,6 +107,11 @@
      color: #bfbfbf;
      border-radius: 0px;
  }
+ .menu ul li ul li a:hover .fa-caret-right
+ {
+     color: #bfbfbf;
+ }
+
  .sub-drop
  {
      display: none;
@@ -105,7 +120,7 @@
  {
      display: block;
      position: absolute;
-     background-color: rgba(0, 0, 0, 0.4);;
+     background-color: rgba(0, 0, 0, 0.4);
      margin-left:220px;
      margin-top: -60px;
  }

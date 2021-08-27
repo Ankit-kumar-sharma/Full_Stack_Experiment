@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .main {
+        position: relative;
+        margin: auto;
+        width: 80%;
+        height: 500px;
+        border: 1px solid black;
+      }
+      .box {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+      #box3 {
+        position: relative;
+        top: -50px;
+        left: 300px;
+      }
+      #box4 {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+      .main2
+      {
+        width: 98%;
+        height: 2000px;
+        border: 1px solid black;
+        margin: auto;
+      }
+      .nav
+      {
+        position: sticky;
+        top: 0;
+        left:200px;
+        width: 80%;
+        height: 200px;
+        margin-top: 100px;
+        border: 1px solid black;
+      }
+      .fixed
+      {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: 1px solid black;
+        height: 100px;
+        width: 300px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- Here we are going to discusss about all values of the position property like
+    relative, absolute, fixed, sticky and static -->
+    <div class="main">
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, quasi
+          veritatis! Quisquam doloremque mollitia dolorum aliquam et eaque natus
+          fugit ex eius illum tempora delectus totam numquam earum neque amet
+          
+        </p>
+      </div>
+      <div class="box" id="box4">
+        <p>
+          this is an example of position absolute Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Sit nobis porro nihil nisi cum? Quidem
+          sed aperiam quod ea necessitatibus.
+        </p>
+      </div>
+    </div>
+    <div class="main2">
+      <div class="nav">
+
+      </div>
+      <div class="fixed">This div has position fixed property. Thank you.</div>
+    </div>
+  </body>
+</html>
