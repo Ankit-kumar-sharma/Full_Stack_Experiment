@@ -199,7 +199,8 @@ flex-wrap: wrap;
     .section3Box
     {
 
-        width: 55%;
+        width: 80%;
+        height: 500px;
         margin: 10px auto;
     }
 }
