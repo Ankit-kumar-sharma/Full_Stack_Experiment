@@ -18,11 +18,7 @@
 }
 .header
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #bfbfbf;
-    background-color: #aaaa;
+    background-color: black;
     width: 95%;
     margin: auto;
     height: 100px;
