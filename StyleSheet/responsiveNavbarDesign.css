@@ -1,0 +1,166 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.box
+{
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 20px;
+    height: 500px;
+    border: 1px solid black;
+}
+.header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+.container
+{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    /* background-color: black; */
+    transition: .6s;
+}
+.navbar
+{
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    background-color: black;
+    width: 25%;
+    height: 100%;
+    left: -100%;
+    transition: .5s;
+}
+#check
+{
+    display: none;
+    position: fixed;
+    left: 200px;
+    top: 10px;
+}
+.show-btn
+{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+.hide-btn
+{
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+#check:checked ~ .navbar
+{
+    /* position: fixed; */
+    left: 0;
+}
+#check:checked ~.show-btn
+{
+    opacity: 0;
+}
+#check:checked ~.hide-btn
+{
+    opacity: 1;
+}
+/* #check:checked ~ .container
+{
+    margin-left: 20px;
+    width: 80%;
+} */
+.navbar ul
+{
+    list-style: none;
+}
+.navbar ul li
+{
+    padding-left: 10px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #aaaa;
+    margin-bottom: 20px;
+    transition-property: border;
+    transition: .5s;
+}
+.navbar ul li a
+{
+    margin: auto;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.navbar ul li:hover
+{
+    border-left: 8px solid white;
+}
+
+.fa
+{
+    font-size: 30px;
+    color: gray;
+    transition: color;
+    transition-duration: 1s;
+}
+.fa:hover
+{
+    color: white;
+}
+.socialMediaContainer
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid white; */
+}
+@media (max-width:700px)
+{
+    .navbar
+    {
+        width: 100%;
+    }
+    
+}
+@media (max-width:400px)
+{
+    .navbar
+    {
+        width: 20%;
+    }
+    .mob
+    {
+        display: none;
+    }
+    .fa
+    {
+        text-align: center;
+    }
+}
