@@ -1,0 +1,489 @@
+/* CSS file code */
+*
+{
+    font-family: 'Raleway', sans-serif;    
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding-top: 125px;
+}
+/* .mtitle
+{
+    text-align: center;
+    margin-top: 200px;
+    font-size: 25px;
+    font-weight: 200;
+    color: white;
+    font-family: 'Raleway', sans-serif;    
+} */
+.container
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.header
+{  
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    height: 60px;
+    margin-top: 0px;
+    border-radius: 0px;
+    line-height: 60px;
+}
+.header ul
+{
+    list-style-type: none;
+}
+.header ul li
+{
+    display: inline-block;
+}
+.header ul li a
+{
+    border: 1px solid black;
+    display:inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    transition-property: border-bottom;
+    transition-duration: .4s;
+    transition-timing-function: linear;
+    transition-delay: .1s;
+}
+#active
+{
+    border-bottom: 1px solid white;
+}
+.header ul li a:hover
+{
+    border-bottom: 1px solid white;
+}
+.fa
+{
+    margin-right: 10px;
+}
+.banner
+{
+ 
+    width: 100%;
+    height:auto;
+    /* background-image: url(../Images/lapback2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit:contain; */
+    margin: auto;
+    /* position: relative; */
+    /* border: 1px solid black; */
+}
+
+.section-1
+{
+    width: 95%;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+}
+.titleContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 100%;
+    height: 50px;
+}
+.boxContainer
+{
+margin-top: 20px;
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+flex-wrap: wrap;
+}
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-bottom: 90px;
+    transition: .5s;
+}
+
+.user-icon
+{
+    display: block;
+    font-size: 200px;
+}
+::selection
+{
+    background-color: white;
+    color: black;
+}
+.box:hover
+{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.section-2
+{
+    width: 98%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+.mainContent
+{
+    padding:20px 10px;
+    font-family: 'Raleway', sans-serif;
+    width: 50%;
+    height: 501px;
+    background-color: black;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    border: 1px solid #bfbfbf;
+    margin-bottom: 20px;
+}
+.articalContainer
+{
+    padding-left:30px;
+    width: 50%;
+    height: 500px;
+}
+.articalBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+    /* transform: rotate(10deg); */
+    height: 32.7%;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+#articalBox1
+{
+    /* margin-top: 50px; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/Project1.jpg);
+}
+#articalBox2
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/Project2.jpg);
+}
+#articalBox3
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/Project3.jpg);
+}
+.section-3
+{
+    margin-top: 20px;
+    width: 95%;
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.section3Box
+{
+    margin-bottom: 20px;
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    border: 1px solid #bfbfbf;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.footer
+{
+    position: relative;
+    padding:14px;
+    padding-top: 40px;
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+.bToT
+{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    /* border-radius: 5px; */
+    border: 1px solid white;
+    cursor: pointer;
+}
+.bToT a
+{
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 10px;
+    color: white;
+    font-size: 25px;
+
+}
+
+.imgContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    transition: 2s;
+}
+.imgContainer:hover
+{
+    cursor: pointer;
+    background-color: #bfbfbf;
+    color: black;
+}
+.headingContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 30px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s;
+    transition-delay: .2;
+}
+.headingContainer:hover
+{
+    cursor: pointer;
+    border-bottom:1px solid white;
+}
+.paraContainer
+{
+    text-align: justify;
+    padding: 30px 10px;
+    width: 98%;
+    height: 250px;
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+.sec3Para
+{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+.serHead
+{
+    font-size: 20px;
+    color: white;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+}
+.btnContainer
+{
+    width: 90%;
+    height: 55px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+}
+.rBtn
+{
+    line-height: 55px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    transition: 2s;
+}
+.rBtn:hover
+{
+    background-color: white;
+    color: black;
+}
+.show-btn,.hide-btn
+{
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    right: 20px;
+    top: 0px;
+    display: none;
+}
+.hide-btn
+{
+    opacity: 0;
+}
+input[type=checkbox]
+{
+    color: blue;
+    display: none;
+}
+.logo
+{
+    display: none;
+}
+.myName
+{
+    text-align: center;
+}
+@media screen and (min-width:922px) and (max-width:1231px) {
+
+    .header ul li a
+    {
+        width: 150px;
+    }
+}
+@media screen and (max-width:921px) {
+    .section-1
+    {
+        margin-top: 0px;
+    }
+    .box
+    {
+        margin-bottom: 40px;
+    }
+    .show-btn
+    {
+        display: block;
+    }
+   .logo
+   {
+       display: block;
+   }
+ .header ul 
+ {
+     height: 100vh;
+     top: 50px;
+     background-color: black;
+     position: fixed;
+     right: -100%;
+     width: 50%;
+     display: block;
+     transition: 1s;
+ }
+ .section-2
+ {
+     width: 100%;
+     flex-wrap: wrap;
+ }
+ .mainContent
+ {
+     width: 100%;
+     height: auto;
+     margin: auto;
+     margin-bottom: 100px;
+
+ }
+ .articalContainer
+ {
+     padding: 0px;
+     width: 100%;
+     margin: auto;
+ }
+ 
+    #check:checked ~ #menu
+    {
+        right: 0;
+    }
+    #check:checked ~ .show-btn
+    {
+        opacity: 0;
+    }
+    #check:checked ~ .hide-btn
+    {
+        display: block;
+        opacity: 1;
+        color: white;
+    }
+    .footer
+    {
+        width: 95%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .section-3
+    {
+        width: 100%;
+    }
+    .section3Box
+    {
+        width: 95%;
+    }
+    .myName
+    {
+        text-align: left;
+    }
+}
+@media (min-width:809px) and (max-width:920px) 
+{
+
+    .header ul li a
+    {
+        display: block;
+       width: 300px;
+       color: white;
+    }
+}
+@media screen and (max-width:461px)
+{
+    .footer
+    {
+        width: 100%;
+    }
+    .section-3Box
+    {
+        width: 100%;
+    }
+    .header ul
+    {
+        width: 100%;
+    }
+    .header ul li a
+    {
+        width: 300px;
+    }
+}
