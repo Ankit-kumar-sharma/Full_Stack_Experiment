@@ -15,7 +15,7 @@ html
     width: 100%;
     height: auto;
     border: 1px solid black;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .header
 {
@@ -207,7 +207,7 @@ transition-duration: .3s;
         width: 70%;
         /* background-color: yellow; */
     }
-    
+       
     
     
 }
