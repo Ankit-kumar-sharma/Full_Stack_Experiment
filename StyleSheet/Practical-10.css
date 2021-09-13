@@ -49,7 +49,7 @@ html
 {
     width: 98%;
     /* border: 1px solid black; */
-    height: 500px;
+    height: 550px;
     margin: 2px auto;
     /* background-image: url(../Images/undraw_High_five_re_jy71.svg);
     background-size:contain;
@@ -58,38 +58,38 @@ html
 .services
 {
     width: 98%;
-    height: 500px;
+    height: 550px;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .questions
 {
     width: 98%;
-    height: 500px;
+    height: 550px;
     margin: auto;
-    border: 1px solid black;   
+    /* border: 1px solid black;    */
 }
 .courses
 {
     width: 98%;
-    height: 500px;
+    height: 550px;
     margin: auto;
-    border: 1px solid black;   
+    /* border: 1px solid black;    */
 
 }
 .feedback
 {
     width: 98%;
-    height: 500px;
+    height: 550px;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .footer
 {
     width: 98%;
-    height: 500px;
+    height: 550px;
     margin: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 50px;
 }
 
