@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Html Form Demo</title>
+    <link rel="stylesheet" href="../StyleSheet/htmlForm.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+          <form action="" autocomplete="off" method="GET">
+        <div class="container">
+          <label for="first_name">UserName</label>
+          <div class="userInput">
+            <input type="text" name="first_name" id="first_name" placeholder="Enter name" required/>
+            <span class="iconContainer"><i class="fa fa-user-o fas"></i> </span>
+          </div>
+        </div>
+        <div class="container">
+          <label for="password">Password</label>
+          <div class="userInput">
+            <input type="password" name="password" id="password" placeholder="Enter Password" required/>
+          <span class="iconContainer"><i class="fa fa-eye fas" onclick="showPassword()" id="eye"></i></span>  
+          </div>
+        </div>
+        <input type="reset"/><span class="fp">Forget Password?</span>
+        <div>
+            <input type="submit" name="submitBtn" value="Submit" class="submitBtn">
+        </div>
+    </form>
+      </section>
+    </main>
+    <script>
+        function showPassword()
+        {
+            if(document.getElementById('eye').className==="fa fa-eye fas")
+            {
+                document.getElementById('eye').className="fa fa-eye-slash fas";
+                document.getElementById('password').type="text";
+            }
+            else
+            {
+                document.getElementById('password').type="password";
+                document.getElementById('eye').className="fa fa-eye fas";
+             
+            }
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+footer {
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+.header {
+  width: 100%;
+  height: 15vh;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: gray;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid black;
+  height: auto;
+  font-size: 19px;
+  flex-wrap: wrap;
+  background-color: black;
+}
+.AboutUs {
+  background-color: black;
+  width: 538.5px;
+  height: 400px;
+  color: gray;
+  padding: 5px;
+  text-align: justify;
+  padding-top: 30px;
+  flex-shrink: 0;
+  /* border: 1px solid black; */
+}
+.title {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.Category {
+  width: 269.5px;
+  /* border: 1px solid; */
+  padding: 50px;
+  background-color: black;
+  color: gray;
+  padding-top: 15px;
+  padding: 30px;
+}
+.Category ul {
+  margin-top: 20px;
+  text-decoration: none;
+  list-style: none;
+}
+.Category ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+.Category ul a {
+  text-decoration: none;
+  color: gray;
+}
+.Category ul a:hover {
+  color: red;
+}
+.quickLinks {
+  /* border: 1px solid black; */
+  width: 202px;
+  background-color: black;
+  color: gray;
+  padding-top: 30px;
+}
+.q1
+{
+    list-style: none;
+}
+.q1 li
+{
+    display: block;
+    margin-bottom: 10px;
+}
+.q1 a {
+    text-decoration: none;
+    color: gray;
+  }
+  .q1 a:hover {
+    color: red;
+  }
+.contactUs {
+    background-color: black;
+    padding: 0px;
+    padding-top: 30px;
+    color: gray;
+  /* border: 1px solid white; */
+  width: 337px;
+
+}
+.fap
+{
+    margin-right: 10px;
+}
+.contactUs ul
+{
+    list-style: none;
+}
+.contactUs ul li
+{
+    margin-bottom: 10px;
+}
+.contactUs ul li a
+{
+    text-decoration: none;
+    color: gray;
+}
+.contactUs ul li a:hover
+{
+    color: red;
+}
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 25vh;
+  border-top: 1px solid gray;
+  /* border-bottom: 1px solid gray; */
+  background-color: black;
+}
+.socialMedia {
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  flex-wrap: wrap;
+}
+.iconContainer {
+  font-size: 23px;
+  cursor: pointer;
+  margin-right: 40px;
+  width: 60px;
+  height: 60px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #aaaa;
+}
+.fas {
+  color: white;
+}
+.ic1:hover {
+  background-color: blue;
+  color: white;
+}
+.ic2:hover {
+  background-color: rgba(80, 80, 190, 0.842);
+  color: white;
+}
+.ic3:hover {
+  background-color: red;
+  color: white;
+}
+.ic4:hover {
+  background-color: orange;
+  color: white;
+}
+.copyright {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #bfbfbf;
+  width: 100%;
+  height: 15vh;
+  /* border: 1px solid black; */
+  /* margin-bottom: 10px; */
+  /* margin-top: 2px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rff {
+  color: #bfbfbf;
+  font-family: arial;
+  font-size: 33px;
+}
+.btn {
+  border: none;
+  height: 50px;
+  width: 140px;
+  margin-left: 20px;
+  font-size: 25px;
+  background-color: red;
+  color: white;
+  border-radius: 30px;
+  cursor: pointer;
+}
+@media (max-width:541px)
+{
+    .AboutUs
+    {
+        text-align: justify;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+
+    }
+    .AboutUs h1
+    {
+        text-align: center;
+    }
+    .contactUs
+    {
+        text-align: center;
+        width: 100%;
+    }
+    .Category
+    {
+        text-align: center;
+        width: 100%;
+    }
+    .quickLinks
+    {
+        text-align: center;
+        width: 100%;
+    }
+    .socialMedia
+    {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .iconContainer
+    {
+        margin-right: 0px;
+    }
+    .copyright
+    {
+        text-align: center;
+    }
+    .signupContainer
+    {
+        flex-wrap: wrap;
+    }
+}
