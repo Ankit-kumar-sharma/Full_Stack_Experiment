@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Style using pseudo element</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        body
+        {
+            display: flex;
+            align-items: center;
+            height: 100vh;
+            background-color: whitesmoke;
+        }
+        .container
+        {
+            /* padding-left: 20px; */
+            width: 25%;
+            height: 90vh;
+            border: 1px solid #bfbfbf;
+            box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.3);
+            /* margin: auto; */
+        }
+        .container ul
+        {
+            list-style-type: none;
+        }
+        .container ul li
+        {
+            padding-left: 20px;
+            height: 40px;
+            line-height: 40px;
+            margin-bottom: 30px;
+            /* border: 1px solid black; */
+            position: relative;
+        }
+        .container ul li a
+        {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container ul li::before
+        {
+            position: absolute;
+            content: '';
+            width: 0px;
+            height: 2px;
+            background-color: gray;
+            bottom: 0;
+            left: 20px;
+            transition: width 1s;
+            cursor: pointer;
+        }
+        .container ul li:hover::before
+        {
+            width: 92%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>About Us</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>Courses</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>Services</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>Feedback</a></li>
+            <li><a href="#"><i class="fa fa-home"></i>Help</a></li>
+        </ul>
+    </div>
+</body>
+</html>

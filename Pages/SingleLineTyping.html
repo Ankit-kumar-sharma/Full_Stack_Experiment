@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Line Typing</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 100%;
+            height: 100vh;
+            border: 1px solid black;
+           display: flex;
+           justify-content: center;
+           align-items: center; 
+        }
+        p
+        {
+            position: relative;
+            color: red;
+            font-family: arial;
+            font-size: 25px;
+            width: 0ch;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 1px solid black;
+            /* animation: typing 6s steps(22) infinite;        */
+            animation-name: typing;
+            animation-duration: 3s;
+            animation-timing-function: steps(22);
+            animation-iteration-count: infinite;
+        }
+        @keyframes typing {
+            100%
+            {
+                width:22ch;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- It will consider only characters not white-space -->
+        <p>Start your journey with us.</p>
+    </div>
+    
+</body>
+</html>

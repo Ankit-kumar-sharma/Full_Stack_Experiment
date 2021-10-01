@@ -1,0 +1,94 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+table {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+table thead tr th {
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+caption {
+  caption-side: top;
+  /* border: 1px solid black; */
+  height: 40px;
+  line-height: 40px;
+  font-size: 22px;
+  color: white;
+  background-color: purple;
+}
+table,
+td,
+tr {
+  font-size: 18px;
+  border-collapse: collapse;
+  width: 70%;
+}
+table {
+  border: 3px solid purple;
+}
+
+tr {
+  border: 1px solid gray;
+}
+table tr td:nth-child(1) {
+  width: auto;
+  padding: 14px;
+  text-align: center;
+}
+table tr td:nth-child(3) {
+  white-space: nowrap;
+  width: auto;
+  padding: 0px 50px;
+}
+table tr td a {
+  text-decoration: none;
+  color: gray;
+}
+table tr td:nth-child(4) {
+  white-space: nowrap;
+  width: auto;
+  text-align: center;
+  color: green;
+  padding: 0px 10px;
+}
+table tr td:nth-child(5)
+{
+  /* border: 1px solid black; */
+  text-align: center;
+}
+.fa1
+{
+  margin-right: 20px;
+  color: gray;
+  cursor: pointer;
+}
+.fa1:hover, .fa2:hover
+{
+  color: purple;
+  transform: scale(1.2);
+}
+.fa2
+{
+  color: gray;
+  cursor: pointer;
+}
+table tr td {
+  padding-left: 10px;
+  height: 40px;
+}
+table tr:last-child td:nth-child(4)
+{
+    color: red;
+}

@@ -1,3 +1,4 @@
+/* CSS code */
 * {
   padding: 0px;
   margin: 0px;
@@ -7,12 +8,10 @@
 footer {
   width: 100%;
   height: auto;
-  /* border: 1px solid black; */
 }
 .header {
   width: 100%;
   height: 15vh;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +41,6 @@ footer {
   text-align: justify;
   padding-top: 30px;
   flex-shrink: 0;
-  /* border: 1px solid black; */
 }
 .title {
   color: white;
@@ -53,7 +51,6 @@ footer {
 }
 .Category {
   width: 269.5px;
-  /* border: 1px solid; */
   padding: 50px;
   background-color: black;
   color: gray;
@@ -77,57 +74,47 @@ footer {
   color: red;
 }
 .quickLinks {
-  /* border: 1px solid black; */
   width: 202px;
   background-color: black;
   color: gray;
   padding-top: 30px;
 }
-.q1
-{
-    list-style: none;
+.q1 {
+  list-style: none;
 }
-.q1 li
-{
-    display: block;
-    margin-bottom: 10px;
+.q1 li {
+  display: block;
+  margin-bottom: 10px;
 }
 .q1 a {
-    text-decoration: none;
-    color: gray;
-  }
-  .q1 a:hover {
-    color: red;
-  }
+  text-decoration: none;
+  color: gray;
+}
+.q1 a:hover {
+  color: red;
+}
 .contactUs {
-    background-color: black;
-    padding: 0px;
-    padding-top: 30px;
-    color: gray;
-  /* border: 1px solid white; */
+  background-color: black;
+  padding: 0px;
+  padding-top: 30px;
+  color: gray;
   width: 337px;
-
 }
-.fap
-{
-    margin-right: 10px;
+.fap {
+  margin-right: 10px;
 }
-.contactUs ul
-{
-    list-style: none;
+.contactUs ul {
+  list-style: none;
 }
-.contactUs ul li
-{
-    margin-bottom: 10px;
+.contactUs ul li {
+  margin-bottom: 10px;
 }
-.contactUs ul li a
-{
-    text-decoration: none;
-    color: gray;
+.contactUs ul li a {
+  text-decoration: none;
+  color: gray;
 }
-.contactUs ul li a:hover
-{
-    color: red;
+.contactUs ul li a:hover {
+  color: red;
 }
 .signupContainer {
   display: flex;
@@ -136,7 +123,6 @@ footer {
   width: 100%;
   height: 25vh;
   border-top: 1px solid gray;
-  /* border-bottom: 1px solid gray; */
   background-color: black;
 }
 .socialMedia {
@@ -156,7 +142,6 @@ footer {
   margin-right: 40px;
   width: 60px;
   height: 60px;
-  /* border: 1px solid black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,9 +172,6 @@ footer {
   color: #bfbfbf;
   width: 100%;
   height: 15vh;
-  /* border: 1px solid black; */
-  /* margin-bottom: 10px; */
-  /* margin-top: 2px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,50 +192,39 @@ footer {
   border-radius: 30px;
   cursor: pointer;
 }
-@media (max-width:541px)
-{
-    .AboutUs
-    {
-        text-align: justify;
-        width: 100%;
-        height: auto;
-        padding: 10px;
-
-    }
-    .AboutUs h1
-    {
-        text-align: center;
-    }
-    .contactUs
-    {
-        text-align: center;
-        width: 100%;
-    }
-    .Category
-    {
-        text-align: center;
-        width: 100%;
-    }
-    .quickLinks
-    {
-        text-align: center;
-        width: 100%;
-    }
-    .socialMedia
-    {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-    .iconContainer
-    {
-        margin-right: 0px;
-    }
-    .copyright
-    {
-        text-align: center;
-    }
-    .signupContainer
-    {
-        flex-wrap: wrap;
-    }
+@media (max-width: 541px) {
+  .AboutUs {
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .AboutUs h1 {
+    text-align: center;
+  }
+  .contactUs {
+    text-align: center;
+    width: 100%;
+  }
+  .Category {
+    text-align: center;
+    width: 100%;
+  }
+  .quickLinks {
+    text-align: center;
+    width: 100%;
+  }
+  .socialMedia {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .iconContainer {
+    margin-right: 0px;
+  }
+  .copyright {
+    text-align: center;
+  }
+  .signupContainer {
+    flex-wrap: wrap;
+  }
 }
