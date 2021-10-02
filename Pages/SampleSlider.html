@@ -1,28 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sample Slider</title>
-    <link rel="stylesheet" href="../StyleSheet/sampleSlider.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../StyleSheet/sampleSlider.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="sliderContainer">
-            <div class="imgContainer">
-                <img src="../Images/undraw_Active_support_re_b7sj.svg" >
-                <img src="../Images/undraw_contact_us_15o2.svg">
-                <img src="../Images/undraw_Detailed_analysis_re_tk6j.svg" alt="">
-                <img src="../Images/undraw_enter_uhqk.svg" alt="">
-                <img src="../Images/undraw_Developer_activity_re_39tg.svg" alt="">
-            </div>
+      <div class="sliderContainer">
+        <div class="imgContainer">
+          <img src="../Images/undraw_Active_support_re_b7sj.svg" id="img1"/>
+          <img src="../Images/undraw_contact_us_15o2.svg"  id="img2"/>
+          <img src="../Images/undraw_Detailed_analysis_re_tk6j.svg" alt="" id="img3"/>
+          <img src="../Images/undraw_enter_uhqk.svg" alt="" id="img4"/>
+          <img src="../Images/undraw_Developer_activity_re_39tg.svg" alt="" id="img5"/>
+        </div>
+        <div class="btnContainer">
             <button id="btn1" class="btn"></button>
             <button id="btn2" class="btn"></button>
             <button id="btn3" class="btn"></button>
             <button id="btn4" class="btn"></button>
             <button id="btn5" class="btn"></button>
         </div>
+      </div>
     </div>
-</body>
+    <script>
+        var duration=100000;
+        document.getElementById('btn1').onclick= function()
+        {
+          document.getElementById('img1').style="margin-left:0%; animation-name:none;";
+          document.getElementById('btn1').style="background-color:blue" }
+        document.getElementById('btn2').onclick= function()
+        {
+            document.getElementById('img1').style="margin-left:-20%; animation-name:none";
+       ;
+            
+        }
+        document.getElementById('btn3').onclick= function()
+        {
+            document.getElementById('img1').style="margin-left:-40%; animation-name:none";
+        }
+        
+        document.getElementById('btn4').onclick= function()
+        {
+            document.getElementById('img1').style="margin-left:-60%; animation-name:none";
+        }
+        document.getElementById('btn5').onclick= function()
+        {
+            document.getElementById('img1').style="margin-left:-80%; animation-name:none;";
+        }
+        function resume()
+        {
+            alert("Resume");
+            document.getElementById('img1').style="margin-left:0%; animation-name:slide;"; 
+        }
+        setInterval(resume,duration);
+        </script>
+  </body>
 </html>
