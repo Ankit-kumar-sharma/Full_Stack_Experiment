@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 100px;
+        /* border: 1px solid black; */
+      }
+      .icon
+      {
+         
+          color: gold;
+          font-size: 30px;
+          margin-right: 10px;
+          cursor: pointer;
+      }
+      .reaction
+    {
+        /* border: 1px solid black; */
+        height: 100px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .react
+    {
+        font-size: 40px;
+        color: blue;
+    }
+    .re
+    {
+        
+        display: none;
+    }
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <span class="icon" id="icon1"><i class="fa fa-star-o" id="ic1"></i></span>
+        <span class="icon" id="icon2"><i class="fa fa-star-o" id="ic2"></i></span>
+        <span class="icon" id="icon3"><i class="fa fa-star-o" id="ic3"></i></span>
+        <span class="icon" id="icon4"><i class="fa fa-star-o" id="ic4"></i></span>
+        <span class="icon" id="icon5"><i class="fa fa-star-o" id="ic5"></i></span>
+    </div>
+    <div class="reaction">
+        <span class="react"><i class="fa fa-frown-o re" id="ric1">bed</i></span>
+        <span class="react"><i class="fa fa-meh-o re" id="ric2">satisfy</i></span>
+        <span class="react"><i class="fa fa-coffee re" id="ric3">good</i></span>
+        <span class="react"><i class="fa fa-smile-o re" id="ric4">Very good</i></span>
+        <span class="react"><i class="fa fa-heart re" id="ric5">Excellent</i></span>     
+    </div>
+  </body>
+  <script>
+      document.getElementById('icon1').onclick=function()
+      {
+          if(document.getElementById('ic1').className=="fa fa-star-o")
+          {
+
+              document.getElementById('ic1').className="fa fa-star";
+              document.getElementById('ric1').style="display:block";
+              
+            }
+            else
+            {
+                document.getElementById('ic2').className="fa fa-star-o";
+                document.getElementById('ic3').className="fa fa-star-o";
+                document.getElementById('ic4').className="fa fa-star-o";
+                document.getElementById('ic5').className="fa fa-star-o";
+                document.getElementById('ric2').style="display:none";
+                document.getElementById('ric1').style="display:block";
+                document.getElementById('ric3').style="display:none";
+                document.getElementById('ric4').style="display:none";
+                document.getElementById('ric5').style="display:none";
+            }
+            
+        }
+        document.getElementById('icon2').onclick=function()
+        {
+            if(document.getElementById('ic2').className=="fa fa-star-o")
+            {
+                document.getElementById('ic1').className="fa fa-star";
+                
+                document.getElementById('ic2').className="fa fa-star";
+                document.getElementById('ric2').style="display:block";
+                document.getElementById('ric1').style="display:none";
+            }
+            else
+            {
+                document.getElementById('ic3').className="fa fa-star-o";
+                document.getElementById('ic4').className="fa fa-star-o";
+                document.getElementById('ic5').className="fa fa-star-o";
+                document.getElementById('ric3').style="display:none";
+                document.getElementById('ric4').style="display:none";
+                document.getElementById('ric5').style="display:none";
+                document.getElementById('ric2').style="display:block";
+              
+          }
+     
+      }
+      document.getElementById('icon3').onclick=function()
+      {
+          if(document.getElementById('ic3').className=="fa fa-star-o")
+          {
+            document.getElementById('ic1').className="fa fa-star";
+
+              document.getElementById('ic2').className="fa fa-star";
+              document.getElementById('ic3').className="fa fa-star";
+              document.getElementById('ric3').style="display:block";
+              document.getElementById('ric1').style="display:none";
+              document.getElementById('ric2').style="display:none";
+            }
+            else
+            {
+                // document.getElementById('ic3').className="fa fa-star-o";
+                document.getElementById('ic4').className="fa fa-star-o";
+                document.getElementById('ic5').className="fa fa-star-o";
+                document.getElementById('ric4').style="display:none";
+                document.getElementById('ric5').style="display:none";
+                document.getElementById('ric3').style="display:block";
+              
+          }
+      }
+      document.getElementById('icon4').onclick=function()
+      {
+          if(document.getElementById('ic4').className=="fa fa-star-o")
+          {
+            document.getElementById('ic1').className="fa fa-star";
+
+              document.getElementById('ic2').className="fa fa-star";
+              document.getElementById('ic3').className="fa fa-star";
+              document.getElementById('ic4').className="fa fa-star";
+              document.getElementById('ric4').style="display:block";
+              document.getElementById('ric3').style="display:none";
+              document.getElementById('ric2').style="display:none";
+              document.getElementById('ric1').style="display:none";
+              document.getElementById('ric5').style="display:none";
+          }
+          else
+          {
+            document.getElementById('ic5').className="fa fa-star-o";
+            document.getElementById('ric4').style="display:block";
+            document.getElementById('ric5').style="display:none";
+
+          }
+      }
+      document.getElementById('icon5').onclick=function()
+      {
+          if(document.getElementById('ic5').className=="fa fa-star-o")
+          {
+            document.getElementById('ic1').className="fa fa-star";
+            document.getElementById('ric5').style="display:block";
+            document.getElementById('ric4').style="display:none";
+            document.getElementById('ric2').style="display:none";
+            document.getElementById('ric3').style="display:none";
+            document.getElementById('ric1').style="display:none";
+              document.getElementById('ic2').className="fa fa-star";
+              document.getElementById('ic3').className="fa fa-star";
+              document.getElementById('ic4').className="fa fa-star";
+              document.getElementById('ic5').className="fa fa-star";
+          }
+          else
+          {
+           document.getElementById('ric5').className="display:none";
+        //    document.getElementById('')   
+          }
+      }
+  </script>
+</html>
