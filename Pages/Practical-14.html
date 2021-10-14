@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter Demo</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        width: 100%;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: gainsboro;
+        width: 400px;
+        height: 400px;
+      }
+      p {
+        color: purple;
+        font-size: 40px;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .btnContainer {
+        height: auto;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+      }
+
+      button:hover {
+        cursor: pointer;
+        border: none;
+        color: white;
+        background-color: purple;
+      }
+      button {
+        font-size: 20px;
+        width: 120px;
+        height: 40px;
+      }
+      #value {
+        font-size: 20px;
+        color: purple;
+        margin: 0px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>Counter</p>
+      <div class="btnContainer">
+        <button id="inc">+</button>
+        <span id="value"></span>
+        <button id="dec">-</button>
+      </div>
+    </div>
+    <script>
+      var num = 0;
+      function displayValue() {
+        document.getElementById("value").innerText = `${num}`;
+      }
+      displayValue();
+      var inc = document.getElementById("inc");
+      inc.addEventListener("click", function () {
+        num = num + 1;
+        displayValue();
+        if (num != 0) {
+          dec.disabled = false;
+        }
+      });
+      var dec = document.getElementById("dec");
+      dec.addEventListener("click", function () {
+        if (num == 0) {
+          dec.disabled = true;
+        } else {
+          num = num - 1;
+        }
+        displayValue();
+      });
+    </script>
+  </body>
+</html>

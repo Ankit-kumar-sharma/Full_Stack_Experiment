@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Implementation in Html</title>
+    <style>
+        *
+        {
+            font-family: 'Times New Roman', Times, serif;
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+            background-color: whitesmoke;
+            background-image: url(../Images/LaptopBackground.jpg);
+            background-position: center;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* border: 1px solid black; */
+        }
+        .box
+        {
+            padding: 10px;
+            text-align: center;
+            /* box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3); */
+            width: 30%;
+            height: 70%;
+            /* background-color: white; */
+            /* border: 1px solid #bfbfbf; */
+            backdrop-filter: blur(2px);
+        }
+        .heading
+        {
+            color: white;
+            font-size: 20px;
+        }
+        .btn
+        {
+            cursor: pointer;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 80px;
+            border:  none;
+            background-color:transparent;
+            color: black;
+            border: 1px solid black;
+            height: 40px;
+            border-radius: 2px;
+            width: 140px;
+        }
+        .input
+        {
+            transition: 1s;
+            margin: auto;
+            display: block;
+            padding: 10px;
+            font-size: 18px;
+            height: 40px;
+            margin-top: 20px;
+            width: 50%;
+            outline: none;
+            border: 1px solid #bfbfbf;
+        }
+    </style>
+</head>
+<body onload="newPage()">
+    <div class="container">
+        <div class="box" onmouseover="fun1()" id="box" onmouseleave="fun2()">
+        <p class="heading" id="heading">Hi! Please fill credentials </p>
+        <button class="btn" id="btn" onclick="changeHead()">Click Me</button>
+        <input type="text" id="input" class="input" onfocus="fun3()" onfocusout="fun4()" onkeydown="fun5()">
+        </div>
+    </div>
+    <script src="../JavaScript/eventIntro.js"></script>
+</body>
+</html>
