@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Box shadow</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: white;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        background-color: #ececec;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 800px;
+             /* border: 1px solid black; */
+      }
+      .btn {
+        background-color: white;
+        border-radius: 50px;
+        font-size: 20px;
+        cursor: pointer;
+        color: forestgreen;
+        text-align: center;
+        line-height: 50px;
+        width: 180px;
+        height: 50px;
+        /* border-radius: 0%; */
+        /* border: 1px solid black; */
+
+        box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+          -2px -2px 12px rgba(255, 255, 255, 0.5),
+          inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+          2px 2px 8px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      .btn:hover {
+          font-size: 18px;
+        box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+          inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+          inset 2px 2px 4px rgba(255, 255, 255, 0.2),
+          inset 2px 2px 8px rgba(0, 0, 0, 0.2);
+      }
+      .btn2 {
+          font-size: 20px;
+          cursor: pointer;
+        color: blue;
+        margin-top: 20px;
+        height: 100px;
+        width: 100px;
+        border: 8px solid #ececec;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+          10px 10px 15px rgba(70, 70, 70, 0.12);
+      }
+      .btn2:hover {
+          /* border:1px solid rgba(255, 255, 255, 0.5); */
+        box-shadow:
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+            inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+        font-size: 18px;
+        }
+      .btn3
+      {
+        -webkit-appearance: none;
+        border: 8px solid #ececec;
+          cursor: pointer;
+          font-size: 20px;
+          color: tomato;
+          margin-top: 40px;
+          height: 80px;
+          width: 80px;
+          /* border: 1px solid black; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+        box-shadow: -7px -7px 17px rgba(255, 255, 255, 0.6),
+        7px 7px 17px rgba(70, 70, 70, 0.2);
+      }
+      .btn3:hover
+      {
+        box-shadow: inset -7px -7px 17px rgba(255, 255, 255, 0.6),
+        inset 7px 7px 17px rgba(70, 70, 70, 0.2);
+        font-size: 18px;  
+      }
+      .btn4
+      {
+          border: 8px solid #ececec;
+          cursor: pointer;
+          color: forestgreen;
+          font-size: 20px;
+          -webkit-appearance: none;
+        display: block;
+        margin-top: 30px;
+          width:200px;
+          height: 200px;
+          text-align: center;
+          line-height: 200px;
+          /* border: 1px solid black; */
+          border-radius: 50%;
+          box-shadow: -10px 10px 15px rgba(255, 255, 255, 0.5),
+          10px 10px 15px rgba(70, 70, 70, 0.12);
+      }
+      .btn4:hover
+      {
+        box-shadow: inset -10px 10px 15px rgba(255, 255, 255, 0.5),
+          inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+          font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <span class="btn">Join</span>
+      <span class="btn2">Join</span>
+      <span class="btn3">Join</span>
+      <span class="btn4">Join</span>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+Cheat Sheet for Html5
+HTML 5 is the latest version of HTML -->
+Html stands for HyperText Markup Language.
+Most Important Keyword to understand what is hypertext? and what is markup?
+Hypertext: The text that contains links to the same page or another page.
+Markup Language: The languages that uses tags to define elements within th documents.
+Html is used to create the structure of webpages.
+It is standard markup language.
+
+    <html>That is called opening tag
+    </html>That is called closing tag.
+
+Simple Html Page 
+<!Doctype html>
+<!Doctype html> declaration defines that this document is html5 document -->
+<html>
+    html tag is the root element of the html page
+<head>
+    head tag contains meta information about html page -->
+    meta tag is used to define metadata about html document
+    what is meta data?
+    metadata means data about data.
+    <meta name="description" content="Free teaching service for all students...any other description">
+    This syntax is used to provide description about webpage
+    <meta name="keywords" content="a3programming.blogspot.com,html tutorial">
+    This syntax is used to provide keywords for your webpage like a3programming.com.It helps to improve SEO of the webpage -->
+    <meta http-equiv="refresh" content="20; url=http://example.com">
+    By using this syntax your webpage will refresh every 20 sec
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    Tell microsoft internet explorer to use latest rendering engine.
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    This syntax is used to define character encoding mechanism and compatiblity of your webpage
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    This is most important meta tag declaration because it helps you to create responsive websites where width=device-with and initial-scale=1.0 which means 100%
+    The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+   
+    <meta name="author" content="Ankit Kumar Sharma">
+    This syntax  is used to define author information of the webpage 
+    <title>
+        title tag is used to describe the title of the webpage
+            title of the webpage
+    </title>
+</head>
+<body>
+    Body of the webpage
+</body>
+</html>
+What is html element?
+    html element is nothing but starting tag, some content, closing tag
+    Example:
+    <p>Hi! there this is Ankit Kumar Sharma</p>
+    This is a html element
+    Remember: Some element don't have content called empty element
+    Example: <br>
+
+ Bioler plate of html documnt
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     
+ </body>
+ </html> 
+ Html Tags
+<p></p> used for paragraphs
+<h1>content</h1> most important heading
+<h2>content</h2>
+<h3>content</h3>
+<h4>content</h4>
+<h5>content</h5>
+<h6></h6> least important heading
+
+<a href="http://" target="_blank" rel="noopener noreferrer"></a>
+contains url that hyperlink points to target is an attribute which tells that link should be open in new page rel attribute define relationship between the linked document and current documnent.
+you can change the value of target possible values are
+_blank:it opens the link in new window
+_self:it opens the linked documents in the same frame
+_parent:it opens the linked documents in parent frame set 
+_top:It opens the linked document in full body of the window
+myframe:it opens the linked document in myframe frame
+<a href="http://www.a3programming.blogspot.com">Click to redirect on given url</a>
+href means hypertext reference used to specify the url of page link goes to.
+<a href="mailto:emailaddress@gmail.com">Click to mail on email</a>
+mailto:write email address you eant to send email
+<a href="tel:+917452091865">Click to call on given number
+</a>
+
+If you to call someone then use this syntax
+<a href="/images/myw3schoolsimage.jpg" download>
+    <img src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
+</a>
+If you will click on the given it wil start downloading
+html attribute
+Example :
+<a href="https://www.w3schools.com">Visit This web</a>
+The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to: -->
+Always provide Additional infromatio about html element
+double quote and single quote rule int Html5
+<p title='John "ShotGun" Nelson'>
+    Or vice versa:
+    <p title="John 'ShotGun' Nelson">
+
+<hr>Empty element
+hr stands for horizontal rule
+attribute for hr tag
+noshade it removes the shadow from hr
+size:height in pixel
+width:width of hr
+align: to set the alingnment of hr
+
+ Physical elements, such as <B> for bold and <I> for italic, are used to specify how text should be displayed. 
+Logical elements, such as <STRONG> and <EM>, indicate what text is, but not necessarily how it should look. 
+
+
+    Physical Tags
+
+    Tag	Description
+    <mark>: highlighted the 
+    <b>	Defines bold text
+    <big>	Defines big text
+    <i>	Defines italic text
+    <small>	Defines small text
+    <sup>	Defines superscripted text
+    <sub>	Defines subscripted text
+    <tt>	Defines teletype text
+    <u>	Deprecated. Use styles instead 
+        
+
+    Logical elements
+    Tag	Description
+<abbr>	Defines an abbreviation
+<acronym>	Defines an acronym
+<address>	Defines an address element
+<cite>	Defines citation
+<code>	Defines computer code text
+<blockquote>	Defines a long quotation
+<del>	Defines text
+<dfn>	Defines a definition term
+<ins>	Defines inserted text
+<kbd>	Defines keyboard text
+<pre>	Defines preformatted text
+<q>	Defines short quotation
+<samp>	Defines sample computer code
+<strong>	Defines strong text
+<var>	Defines a variable
+    
+
+
+ HTML <bdo> for Bi-Directional Override
+    <bdo dir="rtl">This text will be written from right to left</bdo> -->
+
+
+HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+where a means alpha channels which meanns opacity
+rgb(255, 99, 71)
+#ff6347
+hsl(9, 100%, 64%)
+rgba(255, 99, 71, 0.5)
+hsla(9, 100%, 64%, 0.5)
+
+Starting of a little bit of CSS
+The word cascading means that a style applied to a parent element will also apply to all children elements within the parent. So, if you set the color of the body text to "blue", all headings, paragraphs, and other text elements within the body will also get the same color (unless you specify something else)!
+Inline - by using the style attribute inside HTML elements
+Internal - by using a <style> element in the <head> section
+External - by using a <link> element to link to an external CSS file
+The most common way to add CSS, is to keep the styles in external CSS files. However, in this tutorial we will use inline and internal styles, because this is easier to demonstrate, and easier for you to try it yourself.
+
+CSS Border
+The CSS border property defines a border around an HTML element.
+
+CSS Padding
+The CSS padding property defines a padding (space) between the text and the border.
+
+CSS Margin
+The CSS margin property defines a margin (space) outside the border
+
+Button as Link
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+
+Link Formatting Sequence
+a:link
+{
+    apply css
+}
+a:visited
+{
+    apply css
+}
+a:hover
+{
+    apply css
+}
+a:active
+{
+    apply css
+}
+a:focus
+{
+    apply css
+}
+
+Image different formats
+APNG	Animated Portable Network Graphics	.apng
+GIF	Graphics Interchange Format	.gif
+ICO	Microsoft Icon	.ico, .cur
+JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
+PNG	Portable Network Graphics	.png
+SVG	Scalable Vector Graphics	.svg
+
+Html Table :important Property
+cellspacing
+cellpadding
+border-spacing property is used in html5
+rowspan
+colspan
+border-collapse:collapse
+
+Border available property
+The following values are allowed:
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden     
+

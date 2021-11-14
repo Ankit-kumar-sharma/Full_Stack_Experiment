@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    body
+    {
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .marqueeTag
+    {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+
+</style>
+<body>
+    <a href="tel:+917452091852">Click to call</a>
+    <a href="mailto:a3programming@gmail.com">Click to Mail</a>
+    <a href="http://www.a3programming.blogspot.com" target="_blank">Click to given url</a>
+    <a href="http://www.a3programming.blogspot.com" target="_self">Click to given url</a>
+    <hr size="10px" width="400px" noshade>
+    <a href="http://www.a3programming.blogspot.com" target="_parent">Click to given url</a>
+    <a href="http://www.a3programming.blogspot.com" target="_top">Click to given url</a>
+    <a href="http://www.a3programming.blogspot.com" target="myframe">Click to given url</a>
+    <div class="marqueeTag">
+        <marquee behavior="alternate" direction="down" height="200px" width="200px">
+            <marquee behavior="alternate">My name is Ankit</marquee>
+        </marquee>
+    </div>
+    <!-- <p>Press <kbd>Ctrl</kbd>+<kbd>C</kbd> to copy the text.</p> -->
+    <p>Please press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> to re-render an MDN page.</p>
+</body>
+</html>
