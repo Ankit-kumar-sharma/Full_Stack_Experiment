@@ -24,10 +24,10 @@ function checkValues() {
   emailValue = email.value.trim();
   passwordValue = password.value.trim();
   rePasswordValue = rePassword.value.trim();
-  // console.log(usernameValue);
-  // console.log(emailValue);
-  // console.log(passwordValue);
-  // console.log(rePasswordValue);
+  console.log(usernameValue);
+  console.log(emailValue);
+  console.log(passwordValue);
+  console.log(rePasswordValue);
   if (usernameValue.length == 0) {
     setError(username, "Username can't be empty");
   } else {
