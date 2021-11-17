@@ -21,7 +21,6 @@ header {
   padding: 0px 40px 0px 20px;
   width: 100%;
   height: 100px;
-  /* border: 1px solid #bfbfbf; */
 }
 header .logoContainer {
   background-color: transparent;
@@ -29,7 +28,6 @@ header .logoContainer {
   width: 200px;
   height: 40px;
   line-height: 40px;
-  /* border: 1px solid blue; */
 }
 .logoContainer p {
   font-size: 23px;
@@ -39,7 +37,6 @@ header .logoContainer {
 header .navContainer {
   width: 70%;
   height: 40px;
-  /* border: 1px solid black; */
 }
 nav {
   text-align: right;
@@ -47,7 +44,6 @@ nav {
   line-height: 40px;
   width: 100%;
   height: 100%;
-  /* border: 1px solid blue; */
 }
 ::selection {
   color: black;
@@ -59,19 +55,15 @@ nav ul li {
 }
 nav ul li a {
   text-transform: uppercase;
-  /* text-align: center; */
-  /* display: inline-block; */
   width: 100px;
   color: white;
   text-decoration: none;
   font-size: 16px;
   margin-right: 15px;
-  /* background-color: yellow; */
   padding: 0px 15px 0px 15px;
 }
 main {
   background-color: transparent;
-  /* border: 1px solid black  ; */
   width: 100%;
   height: 550px;
   display: flex;
@@ -84,11 +76,9 @@ main .textContainer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* font-size: 45px; */
   text-align: center;
   width: 50%;
   height: 250px;
-  /* border: 1px solid black; */
 }
 .textContainer h1 {
   text-transform: uppercase;
@@ -108,10 +98,9 @@ main .btnContainer {
   margin-top: 0px;
   width: 50%;
   height: 100px;
-  /* border: 1px solid black; */
 }
 .btnContainer a {
-    text-transform: uppercase;
+  text-transform: uppercase;
   text-decoration: none;
   color: black;
   background-color: yellow;
@@ -131,6 +120,5 @@ main .btnContainer {
 .main {
   height: 100vh;
   width: 100%;
-  /* background-color:rgb(17,0,17); */
   background-color: rgba(0, 0, 0, 0.78);
 }
