@@ -77,10 +77,10 @@
       var inc = document.getElementById("inc");
       inc.addEventListener("click", function () {
         num = num + 1;
-        displayValue();
         if (num != 0) {
           dec.disabled = false;
         }
+        displayValue();
       });
       var dec = document.getElementById("dec");
       dec.addEventListener("click", function () {

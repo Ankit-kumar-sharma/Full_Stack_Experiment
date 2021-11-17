@@ -1,0 +1,7 @@
+
+Solved it by following Caching your GitHub password in Git.
+
+The steps are as follows:
+
+Download and install Git for Windows
+Run Git Bash, cd to repo dir and enter git config --global credential.helper wincred
